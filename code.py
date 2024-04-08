@@ -21,7 +21,7 @@ led.direction = digitalio.Direction.OUTPUT
 i2c = busio.I2C(board.GP19, board.GP18)
 oled = adafruit_ssd1306.SSD1306_I2C(128, 32, i2c)
 
-
+# bla bla 
 def sendCMD_waitResp(cmd, uart=slave_hc05, timeout=TIMEOUT):
     print("CMD: " + cmd)
     uart.write(cmd)
